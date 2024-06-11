@@ -24,8 +24,6 @@ jobs:
         with:
           path: 'node_modules'
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            deps-node-modules-
 
       - name: Install dependencies
         # only run npm i if cache not found
@@ -67,10 +65,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: 'node_modules'
-          key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             deps-node-modules-
-
 
       - name: Build and push
         uses: docker/build-push-action@v5
