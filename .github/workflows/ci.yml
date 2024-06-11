@@ -74,7 +74,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: .
           push: false
           tags: mkurz88/test:latest
           load: true
