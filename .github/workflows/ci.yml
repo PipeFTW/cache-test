@@ -63,9 +63,9 @@ jobs:
           name: dist
 
       - name: Cached NPM
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
-          path: ~/.npm
+          path: 'node_modules'
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             deps-node-modules-
