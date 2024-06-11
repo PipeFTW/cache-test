@@ -65,8 +65,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: 'node_modules'
-          restore-keys: |
-            deps-node-modules-
+          key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
 
       - name: Build and push
         uses: docker/build-push-action@v5
