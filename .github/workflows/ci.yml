@@ -71,17 +71,6 @@ jobs:
           restore-keys: |
             deps-node-modules-
 
-      - name: Echo dist files
-        run: ls -l dist
-
-      - name: Echo node_modules files
-        run: ls -l node_modules
-
-      - name: Echo root files
-        run: ls -l
-
-      - name: Echo current path
-        run: pwd
 
       - name: Build and push
         uses: docker/build-push-action@v5
