@@ -37,7 +37,7 @@
     "express-session": "^1.17.3",
     "graphql": "^16.6.0",
     "joi": "^17.9.1",
-    "jwt-decode": "^3.1.2",
+    "jwt-decode": "^4.0.0",
     "monaco-editor": "^0.50.0",
     "nestjs-pino": "^3.5.0",
     "nestjs-session": "^2.0.0",
